@@ -1,0 +1,25 @@
+// Problem 4. Rectangle and Circle Analyzer
+// Input
+Console.Write("Enter rectangle length: ");
+        double l = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter rectangle width: ");
+        double w = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Enter circle radius: ");
+        double r = Convert.ToDouble(Console.ReadLine());
+
+        // Calculate
+        double rectarea = l * w;
+        double rectperimeter = 2 * (l + w);
+        double circlearea = 3.14159 * r * r;
+
+        // Then display boolean comparisons
+        bool rectareaa = rectarea > circlearea;
+        bool rectperimeterr = rectperimeter > 100;
+        bool circleareaa = circlearea > 500;
+
+        Console.WriteLine("Results of comparisons:");
+        Console.WriteLine("rectangle area > circle area: {0}", rectareaa);
+        Console.WriteLine("rectangle perimeter > 100: {0}", rectperimeterr);
+        Console.WriteLine("circle area > 500: {0}", circleareaa);
