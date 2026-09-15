@@ -1,0 +1,22 @@
+if (int.TryParse(txtDoor.Text, out int door))
+{
+    switch (door)
+    {
+        case 1:
+            lblResult.Text = "💰 You found treasure!";
+            break;
+        case 2:
+            lblResult.Text = "👾 A monster appeared!";
+            break;
+        case 3:
+            lblResult.Text = "🧪 You found a magic potion!";
+            break;
+        default:
+            lblResult.Text = "Choose Door 1, 2, or 3.";
+            break;
+    }
+}
+else
+{
+    lblResult.Text = "Choose Door 1, 2, or 3.";
+}

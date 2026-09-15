@@ -1,0 +1,12 @@
+private void btnCollect_Click(object sender, EventArgs e)
+{
+    int coins = 0;
+
+    do
+    {
+        coins += 10;
+    }
+    while (coins < 100);
+
+    lblCoins.Text = "Coins: " + coins;
+}

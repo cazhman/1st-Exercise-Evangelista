@@ -1,0 +1,13 @@
+private void btnGuess_Click(object sender, EventArgs e)
+{
+    int secret = 7;
+    int guess = Convert.ToInt32(txtGuess.Text);
+
+    while (guess != secret)
+    {
+        lblMessage.Text = "Wrong Guess! Try Again.";
+        return;
+    }
+
+    lblMessage.Text = "You Win!";
+}

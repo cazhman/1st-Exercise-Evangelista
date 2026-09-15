@@ -1,0 +1,12 @@
+private void btnPlay_Click(object sender, EventArgs e)
+{
+    int treasure = 1;
+
+    lstScore.Items.Clear();
+
+    while (treasure <= 10)
+    {
+        lstScore.Items.Add("Treasure " + treasure + " collected!");
+        treasure++;
+    }
+}

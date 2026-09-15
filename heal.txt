@@ -1,0 +1,15 @@
+private void btnHeal_Click(object sender, EventArgs e)
+{
+    progressBar1.Value = 0;
+
+    for (int health = 0; health <= 100; health += 20)
+    {
+        progressBar1.Value = health;
+        lblHealth.Text = "❤️ Health: " + health + "%";
+
+        Application.DoEvents();
+        System.Threading.Thread.Sleep(300);
+    }
+
+    MessageBox.Show("Full Health!");
+}

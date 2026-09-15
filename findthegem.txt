@@ -1,0 +1,23 @@
+public partial class Form1 : Form
+{
+    public Form1()
+    {
+        InitializeComponent();
+    }
+
+    private void label1_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnSTART_Click(object sender, EventArgs e)
+    {
+        while (picHero.Left < picTreasure.Left - 50)
+        {
+            picHero.Left += 10;
+            Application.DoEvents();
+            System.Threading.Thread.Sleep(100);
+        }
+        lblStatus.Text = "Gem Found!";
+    }
+}
